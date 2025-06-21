@@ -1,6 +1,6 @@
 import { FC, useMemo } from 'react';
-import { ThemeContext } from './ThemeContext';
-import { useTheme } from './useTheme';
+import { ThemeContext } from '@/app';
+import { useTheme } from '@/shared';
 
 export const ThemeProvider: FC = ({ children }) => {
   const { theme, toggleTheme } = useTheme();

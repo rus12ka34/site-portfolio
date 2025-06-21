@@ -1,10 +1,7 @@
 import { Suspense } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Counter } from './components/Counter';
-import { MainPageAsync } from './pages/Main/Main.async';
-import { AboutPageAsync } from './pages/About/About.async';
-import { ClassNames } from './helpers/class-names/ClassNames';
-import { useTheme } from './theme/useTheme';
+import { MainPage, AboutPage } from '@/pages';
+import { ClassNames, useTheme } from '@/shared';
 
 import './styles/index.scss';
 
@@ -18,11 +15,10 @@ export const App = () => {
       <button onClick={toggleTheme} >Сменить тему</button>
       <Suspense fallback={<>Загрузка...</>}>
         <Routes>
-          <Route path='/' element={<MainPageAsync />} />
-          <Route path='/about' element={<AboutPageAsync />} />
+          <Route path='/' element={<MainPage />} />
+          <Route path='/about' element={<AboutPage />} />
         </Routes>
       </Suspense>
-      <Counter />
     </div>
   );
 };

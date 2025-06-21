@@ -1,7 +1,3 @@
-import { useState } from 'react';
-
-import classes from './About.modules.scss';
-
 const About = () => {
   return (
     <div>
