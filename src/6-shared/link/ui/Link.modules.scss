@@ -1,0 +1,13 @@
+.Link {
+  color: var(--link-color);
+}
+
+.primary {
+  color: var(--link-color-primary);
+  text-decoration: underline;
+}
+
+.secondary {
+  color: var(--link-color-secondary);
+  text-decoration: none;
+}

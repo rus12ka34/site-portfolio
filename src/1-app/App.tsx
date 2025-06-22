@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+
 import { AppRouter } from './routers/app-router/ui/AppRouter';
 import { ClassNames, useTheme } from '@/shared';
+import { Navbar } from '@/widgets';
 
 import './styles/index.scss';
 
@@ -9,8 +10,7 @@ export const App = () => {
 
   return (
     <div className={ClassNames('App', {}, [theme])}>
-      <Link to='/' className='link' >Главная</Link>
-      <Link to='/about' className='link' >О нас</Link>
+      <Navbar />
       <button onClick={toggleTheme} >Сменить тему</button>
       <AppRouter />
     </div>
