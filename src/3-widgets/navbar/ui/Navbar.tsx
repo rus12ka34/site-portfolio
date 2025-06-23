@@ -2,6 +2,7 @@
 import { FC } from 'react';
 import { Link } from '@/shared';
 import { ClassNames, LinkTheme } from '@/shared';
+import { ThemeSwitcher } from '@/widgets'
 
 import cls from './Navbar.modules.scss';
 
@@ -12,7 +13,11 @@ interface NavbarProps {
 export const Navbar: FC<NavbarProps> = () => { 
   return (
     <div className={ClassNames(cls.Navbar, {}, [])}>
-      <div>Портфолио</div>
+      <div>
+        Портфолио
+        <ThemeSwitcher />
+      </div>
+     
       <div>
         <Link to='/' theme={LinkTheme.SECONDARY} >Главная</Link>
         <Link to='/about' theme={LinkTheme.PRIMARY} >О нас</Link>
