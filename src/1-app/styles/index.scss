@@ -7,11 +7,17 @@
   background-color: var(--bg-color);
   min-height: 100vh;
   color: var(--secondary);
-
-  
   font: var(--font);
 
   .link {
     color: var(--primary);
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .content-page {
+    padding: 15px;
   }
 }

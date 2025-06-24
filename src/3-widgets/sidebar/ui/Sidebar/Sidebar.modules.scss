@@ -1,0 +1,14 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - var(--menu-height));
+  background-color: var(--menu-bg);
+
+  width: var(--sidebar-width-mini);
+  transition: .3s;
+}
+
+.expanded {
+  width: var(--sidebar-width);
+}

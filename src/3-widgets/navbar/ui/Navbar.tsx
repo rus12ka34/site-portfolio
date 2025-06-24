@@ -2,7 +2,6 @@
 import { FC } from 'react';
 import { Link } from '@/shared';
 import { ClassNames, LinkTheme } from '@/shared';
-import { ThemeSwitcher } from '@/widgets'
 
 import cls from './Navbar.modules.scss';
 
@@ -15,7 +14,6 @@ export const Navbar: FC<NavbarProps> = () => {
     <div className={ClassNames(cls.Navbar, {}, [])}>
       <div>
         Портфолио
-        <ThemeSwitcher />
       </div>
      
       <div>
