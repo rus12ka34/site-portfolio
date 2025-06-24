@@ -11,8 +11,11 @@ export function buildPlugins(options: BuildOptions): webpack.Configuration['plug
     filename: isDev ? "[name].css" : "[name].[contenthash].css",
     chunkFilename: isDev ? "[id].css" : "[id].[contenthash].css",
   }));
-  plugins.push(new htmlWebpackPlugin({ title: 'ПОПЫТОЧКИ', template: paths.html }));
+  plugins.push(new htmlWebpackPlugin({ title: 'Агрегатор', template: paths.html }));
   plugins.push(new webpack.ProgressPlugin());
+  plugins.push(new webpack.DefinePlugin({
+    __IS_DEV__: Boolean(isDev)
+  }));
 
 	return plugins;
 }

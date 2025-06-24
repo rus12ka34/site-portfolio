@@ -5,6 +5,7 @@ import { Navbar, Sidebar } from '@/widgets';
 
 import './styles/index.scss';
 
+
 export const App = () => {
   const { theme } = useTheme();
 

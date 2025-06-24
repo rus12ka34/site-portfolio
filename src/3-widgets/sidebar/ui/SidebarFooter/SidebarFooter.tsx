@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { ClassNames } from '@/shared';
-import { ThemeSwitcher } from '@/widgets';
+import { ThemeSwitcher, LangSwitcher } from '@/widgets';
 
 import cls from './SidebarFooter.modules.scss';
 
@@ -12,6 +12,7 @@ export const SidebarFooter: FC<SidebarFooterProps> = () => {
   return (
     <div className={ClassNames(cls.SidebarFooter, {}, [])}>
       <ThemeSwitcher />
+      <LangSwitcher />
     </div>
   );
 };
