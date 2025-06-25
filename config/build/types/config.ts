@@ -9,7 +9,7 @@ export type BuildMode = 'production' | 'development';
 
 export interface BuildOptions {
 	port: number;
-	isDev: Boolean;
+	isDev: boolean;
 	mode: BuildMode;
 	paths: BuildPaths;
 }
