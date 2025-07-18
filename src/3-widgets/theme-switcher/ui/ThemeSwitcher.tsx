@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Theme } from '@/app';
 import { ClassNames, useTheme, Button, ButtonView } from '@/shared';
-import Sun from '@/shared/assets/icons/sun.svg';
-import Moon from '@/shared/assets/icons/moon.svg';
+import Sun from '../../../6-shared/assets/icons/sun.svg';
+import Moon from '../../../6-shared/assets/icons/moon.svg';
 
 interface ThemeSwitcherProps {
   className?: string;

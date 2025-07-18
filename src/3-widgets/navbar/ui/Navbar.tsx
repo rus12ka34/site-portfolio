@@ -14,7 +14,7 @@ export const Navbar: FC<NavbarProps> = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={ClassNames(cls.Navbar, {}, [])}>
+    <div className={ClassNames(cls.Navbar, {}, [])} data-testid="navbar">
       <div>
         {t('siteTitle')}
       </div>

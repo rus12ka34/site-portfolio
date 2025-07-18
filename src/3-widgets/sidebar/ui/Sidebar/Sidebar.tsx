@@ -5,7 +5,6 @@ import { SidebarFooter } from '../SidebarFooter/SidebarFooter';
 
 import cls from './Sidebar.modules.scss';
 
-
 interface SidebarProps {
   className?: string;
 };
@@ -17,8 +16,8 @@ export const Sidebar: FC<SidebarProps> = () => {
   const toggleSidebar = () => setExpanded((expanded) => !expanded);
 
   return (
-    <div className={ClassNames(cls.Sidebar, {[cls.expanded]: isExpanded}, [])}>
-      <Button onClick={toggleSidebar}>{t('sidebarToggle')}</Button>
+    <div className={ClassNames(cls.Sidebar, {[cls.expanded]: isExpanded}, [])} data-testid='sidebar'>
+      <Button data-testid='sidebarToggle' onClick={toggleSidebar}>{t('sidebarToggle')}</Button>
       <SidebarFooter />
     </div>
   );
